@@ -1,0 +1,92 @@
+body {
+    background-color: #14cc60;
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: #fff;
+}
+
+/* Icons */
+
+a {
+    color: #fff;
+    background: #09a129;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-family: fontawesome;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    padding-top: 12px;
+    margin: 0 2px;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    -webkit-font-smoothing: antialiased;
+}
+
+a:hover {
+    background: #036d19;
+}
+
+/* pop-up text */
+
+a span {
+    color: #0a2e36;
+    position: absolute;
+    font-family: sans-serif;
+    bottom: 0;
+    left: -40px;
+    right: -40px;
+    padding: 5px 10px;
+    z-index: -1;
+    font-size: 16px;
+    border-radius: 2px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    -o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* text pops up when icon is in hover state */
+
+a:hover span {
+    bottom: -40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* font awesome icons */
+
+a:nth-of-type(1):before {
+    content: '\f1d8';
+}
+
+a:nth-of-type(2):before {
+    content: '\f189';
+}
+
+a:nth-of-type(3):before {
+    content: '\f113';
+}
+
+a:nth-of-type(4):before {
+    content: '\f16c';
+}
