@@ -1,6 +1,36 @@
-body {
-    background-color: #14cc60;
+body{
+    overflow: hidden;    
+    -ms-animation: v 40s infinite;
+    -webkit-animation: v 40s infinite;
+    animation: v 40s infinite;
     text-align: center;
+}
+
+@keyframes v {
+    0% {background:#29ADF0;}
+    20%{background:#F02999;}
+    40%{background:#F06E29;}
+    60%{background:#F0D829;}
+    80%{background:#29F03A;}
+    100%{background:#29ADF0;}
+}
+
+@-webkit-keyframes v {
+    0% {background:#29ADF0;}
+    20%{background:#F02999;}
+    40%{background:#F06E29;}
+    60%{background:#F0D829;}
+    80%{background:#29F03A;}
+    100%{background:#29ADF0;}
+}
+
+@-ms-keyframes v {
+    0% {background:#29ADF0;}
+    20%{background:#F02999;}
+    40%{background:#F06E29;}
+    60%{background:#F0D829;}
+    80%{background:#29F03A;}
+    100%{background:#29ADF0;}
 }
 
 div {
@@ -21,8 +51,10 @@ h1 {
 
 a {
     color: #fff;
-    background: #09a129;
-    border-radius: 4px;
+    -ms-animation: b 40s infinite;
+    -webkit-animation: b 40s infinite;
+    animation: b 40s infinite;
+    border-radius: 6px;
     text-align: center;
     text-decoration: none;
     font-family: fontawesome;
@@ -31,7 +63,7 @@ a {
     width: 40px;
     height: 30px;
     padding-top: 12px;
-    margin: 0 2px;
+    margin: 5px;
     -o-transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -39,8 +71,31 @@ a {
     -webkit-font-smoothing: antialiased;
 }
 
-a:hover {
-    background: #036d19;
+@keyframes b {
+    0% {background:#2491c7;}
+    20%{background:#c4237e;}
+    40%{background:#cc6229;}
+    60%{background:#ccb926;}
+    80%{background:#22c930;}
+    100%{background:#2296cf;}
+}
+
+@-webkit-keyframes b {
+    0% {background:#2491c7;}
+    20%{background:#c4237e;}
+    40%{background:#cc6229;}
+    60%{background:#ccb926;}
+    80%{background:#22c930;}
+    100%{background:#2296cf;}
+}
+
+@-ms-keyframes b {
+    0% {background:#2491c7;}
+    20%{background:#c4237e;}
+    40%{background:#cc6229;}
+    60%{background:#ccb926;}
+    80%{background:#22c930;}
+    100%{background:#2296cf;}
 }
 
 /* pop-up text */
@@ -53,9 +108,9 @@ a span {
     left: -40px;
     right: -40px;
     padding: 5px 10px;
-    z-index: -1;
+    z-index: 1;
     font-size: 16px;
-    border-radius: 2px;
+    border-radius: 4px;
     background: #fff;
     visibility: hidden;
     opacity: 0;
@@ -80,7 +135,7 @@ a:nth-of-type(1):before {
 }
 
 a:nth-of-type(2):before {
-    content: '\f189';
+    content: '\f0e1';
 }
 
 a:nth-of-type(3):before {
@@ -92,5 +147,9 @@ a:nth-of-type(4):before {
 }
 
 a:nth-of-type(5):before {
+    content: '\f1cb';
+}
+
+a:nth-of-type(6):before {
     content: '\f1fa';
 }
