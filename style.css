@@ -1,155 +1,57 @@
-body{
-    overflow: hidden;    
-    -ms-animation: v 40s infinite;
-    -webkit-animation: v 40s infinite;
-    animation: v 40s infinite;
-    text-align: center;
+body {
+    background-color: #000
 }
 
-@keyframes v {
-    0% {background:#29ADF0;}
-    20%{background:#F02999;}
-    40%{background:#F06E29;}
-    60%{background:#F0D829;}
-    80%{background:#29F03A;}
-    100%{background:#29ADF0;}
-}
-
-@-webkit-keyframes v {
-    0% {background:#29ADF0;}
-    20%{background:#F02999;}
-    40%{background:#F06E29;}
-    60%{background:#F0D829;}
-    80%{background:#29F03A;}
-    100%{background:#29ADF0;}
-}
-
-@-ms-keyframes v {
-    0% {background:#29ADF0;}
-    20%{background:#F02999;}
-    40%{background:#F06E29;}
-    60%{background:#F0D829;}
-    80%{background:#29F03A;}
-    100%{background:#29ADF0;}
-}
-
-div {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-h1 {
+#console {
+    font-family: 'Courier New', courier, monospace;
     color: #fff;
+    width: 100%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
 }
-
-/* Icons */
 
 a {
-    color: #fff;
-    -ms-animation: b 40s infinite;
-    -webkit-animation: b 40s infinite;
-    animation: b 40s infinite;
-    border-radius: 6px;
-    text-align: center;
+    color: #0bc;
     text-decoration: none;
-    font-family: fontawesome;
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 30px;
-    padding-top: 12px;
-    margin: 5px;
-    -o-transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s;
-    -webkit-font-smoothing: antialiased;
 }
 
-@keyframes b {
-    0% {background:#2491c7;}
-    20%{background:#c4237e;}
-    40%{background:#cc6229;}
-    60%{background:#ccb926;}
-    80%{background:#22c930;}
-    100%{background:#2296cf;}
+#a {
+    color: #0f0;
 }
 
-@-webkit-keyframes b {
-    0% {background:#2491c7;}
-    20%{background:#c4237e;}
-    40%{background:#cc6229;}
-    60%{background:#ccb926;}
-    80%{background:#22c930;}
-    100%{background:#2296cf;}
+#c {
+    color: #fff;
 }
 
-@-ms-keyframes b {
-    0% {background:#2491c7;}
-    20%{background:#c4237e;}
-    40%{background:#cc6229;}
-    60%{background:#ccb926;}
-    80%{background:#22c930;}
-    100%{background:#2296cf;}
+#b {
+    color: #0bc;
 }
 
-/* pop-up text */
-
-a span {
-    color: #0a2e36;
-    position: absolute;
-    font-family: sans-serif;
-    bottom: 0;
-    left: -40px;
-    right: -40px;
-    padding: 5px 10px;
-    z-index: 1;
-    font-size: 16px;
-    border-radius: 4px;
-    background: #fff;
-    visibility: hidden;
-    opacity: 0;
-    -o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+#root {
+    color: #ff0000;
 }
 
-/* text pops up when icon is in hover state */
-
-a:hover span {
-    bottom: -40px;
-    visibility: visible;
-    opacity: 1;
+#k {
+    animation: change 900ms infinite;
 }
 
-/* font awesome icons */
-
-a:nth-of-type(1):before {
-    content: '\f1d8';
+#op {
+    color: #888888
 }
 
-a:nth-of-type(2):before {
-    content: '\f0e1';
-}
-
-a:nth-of-type(3):before {
-    content: '\f113';
-}
-
-a:nth-of-type(4):before {
-    content: '\f16c';
-}
-
-a:nth-of-type(5):before {
-    content: '\f1cb';
-}
-
-a:nth-of-type(6):before {
-    content: '\f1fa';
+@keyframes change {
+    0% {
+        color: #0f0;
+    }
+    25% {
+        color: black;
+    }
+    50% {
+        color: #0f0;
+    }
+    100% {
+        color: black;
+    }
 }
